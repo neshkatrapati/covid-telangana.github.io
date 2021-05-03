@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script src="https://gmousse.github.io/dataframe-js/dist/dataframe.min.js"></script>
+        <script src="vaccines.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        
+        <label for="date">Select Date: </label>
+        <input type="date" name="date" id="date" />
+        <br> <br>
+        Select State : 
+        <select id='state'></select>
+        <br> <br>
+
+
+        Select District : 
+        <select id='district'></select>
+        <br> <br>
+
+        Select Type:
+        <input type="checkbox" id="paid" name="hospital_type" value="Paid" checked/>
+        <label for="paid">Paid</label>
+
+        <input type="checkbox" id="free" name="hospital_type" value="Free" checked/>
+        <label for="free">Free</label>
+        <br>
+        <br>
+        Minimum Age
+        <input type="radio" id="min_age_18" name="min_age" value="18">
+        <label for="min_age_18">18</label>
+        <input type="radio" id="min_age_45" name="min_age" value="45" checked>
+        <label for="min_age_45">45</label>
+        <br>
+        <br>
+
+        <div id='center_data'>
+            
+        </table>
+        <script type="text/javascript">
+            loadData();
+        </script>
+    </body>
+</html>
